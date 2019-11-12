@@ -1,5 +1,6 @@
 package edu.kis.vh.nursery;
 
+// W eclipse ALT + ← pozwala się cofnąć do poprzednio edytowanego pliku.
 public class HanoiRhymer extends defaultCountingOutRhymer {
 
     int totalRejected = 0;
