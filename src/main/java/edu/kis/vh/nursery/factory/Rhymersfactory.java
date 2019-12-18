@@ -11,5 +11,6 @@ public interface Rhymersfactory {
 	public defaultCountingOutRhymer GetFIFORhymer();
 
 	public defaultCountingOutRhymer GetHanoiRhymer();
-
+	// alt+< szybciej przesuwa kursor
+	
 }
