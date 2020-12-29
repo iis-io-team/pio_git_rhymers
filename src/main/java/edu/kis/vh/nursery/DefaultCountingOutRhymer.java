@@ -1,11 +1,16 @@
 package edu.kis.vh.nursery;
 
+import java.util.TooManyListenersException;
+
 public class DefaultCountingOutRhymer
 {
+    public static final int ERR = -1;
+    public static final int TOTAL = 11;
+    public static final int SIZE = 12;
 
-    private int[] numbers = new int[12];
+    private int[] numbers = new int[SIZE];
 
-    public int total = -1;
+    public int total = ERR;
 
     public void countIn(int in)
     {
@@ -15,18 +20,18 @@ public class DefaultCountingOutRhymer
 
     public boolean callCheck()
     {
-        return total == -1;
+        return total == ERR;
     }
 
     public boolean isFull()
     {
-        return total == 11;
+        return total == TOTAL;
     }
 
     protected int peekaboo()
     {
         if (callCheck())
-            return -1;
+            return ERR;
 
         return numbers[total];
     }
@@ -34,7 +39,7 @@ public class DefaultCountingOutRhymer
     public int countOut()
     {
         if (callCheck())
-            return -1;
+            return ERR;
 
         return numbers[total--];
     }
