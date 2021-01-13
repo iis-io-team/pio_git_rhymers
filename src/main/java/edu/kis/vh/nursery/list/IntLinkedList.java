@@ -5,17 +5,17 @@ public class IntLinkedList
 {
 
     Node last;
-    int i;
-    public static final int ERR = -1;
+    private int i;
+    private static final int ERR = -1;
 
     public void push(int i)
     {
         if (last == null)
             last = new Node(i);
         else {
-            last.next = new Node(i);
-            last.next.prev = last;
-            last = last.next;
+            last.setNext(new Node(i));
+            last.getNext().setPrev(last);
+            last = last.getNext();
         }
     }
 
@@ -33,15 +33,15 @@ public class IntLinkedList
     {
         if (isEmpty())
             return ERR;
-        return last.value;
+        return last.getValue();
     }
 
     public int pop()
     {
         if (isEmpty())
             return ERR;
-        int ret = last.value;
-        last = last.prev;
+        int ret = last.getValue();
+        last = last.getPrev();
         return ret;
     }
 
