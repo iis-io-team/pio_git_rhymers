@@ -4,13 +4,13 @@ import java.util.TooManyListenersException;
 
 public class DefaultCountingOutRhymer
 {
-    public static final int ERR = -1;
-    public static final int TOTAL = 11;
-    public static final int SIZE = 12;
+    private static final int ERR = -1;
+    private static final int TOTAL = 11;
+    private static final int SIZE = 12;
 
     private int[] numbers = new int[SIZE];
 
-    public int total = ERR;
+    private int total = ERR;
 
     public void countIn(int in)
     {
