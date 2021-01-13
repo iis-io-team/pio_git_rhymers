@@ -3,9 +3,9 @@ package edu.kis.vh.nursery;
 //Zmieniono tabulacje przed totalRejected oraz dla składni if...else...
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
-    int totalRejected = 0;
+    private int totalRejected = 0;
 
-    public int reportRejected() {
+    int reportRejected() {
         return totalRejected;
     }
 

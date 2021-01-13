@@ -2,9 +2,13 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    public static final int INIT_VALUE = -1;
-    public static final int SIZE = 12;
+    private static final int INIT_VALUE = -1;
+    private static final int SIZE = 12;
     private int[] numbers = new int[SIZE];
+
+    public int getTotal() {
+        return total;
+    }
 
     public int total = INIT_VALUE;
 
