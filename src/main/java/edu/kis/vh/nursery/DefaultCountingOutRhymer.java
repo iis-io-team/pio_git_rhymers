@@ -34,13 +34,4 @@ public class DefaultCountingOutRhymer {
 			return -1;
 		return numbers[total--];
 	}
-
-	private int[] getNumbers() {
-		return numbers;
-	}
-
-	private void setNumbers(int[] numbers) {
-		this.numbers = numbers;
-	}
-
 }
